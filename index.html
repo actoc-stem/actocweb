@@ -1,323 +1,90 @@
 <!DOCTYPE html>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Hide loader immediately after DOM loads
-    setTimeout(() => {
-        const loader = document.querySelector('.loader');
-        loader.style.opacity = '0';
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 500);
-    }, 1000);
-    
-    // Rest of your functionality here...
-    console.log('ACTOC website loaded successfully!');
-});
-</script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTOC - Free STEM & Wellness for Every Child</title>
+    <title>ACTOC | Built by students, for every student.</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,900;1,900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="logo-spin">
-                <i class="fas fa-rocket"></i>
-            </div>
-            <h2>ACTOC</h2>
-            <p>Launching...</p>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-rocket"></i>
-                <span>ACTOC</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#impact">Impact</a></li>
-                <li><a href="#partner">Partner</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">O⫽</span> ACTOC
+        </div>
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Programs</a>
+            <a href="#">Impact</a>
+            <a href="#">Partner</a>
+            <a href="#" class="btn-get-involved">Get Involved</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
+    <main>
+        <section class="hero">
             <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Every Child</span><br>
-                    Deserves Free STEM &<br>
-                    <span class="gradient-text">Wellness Education</span>
-                </h1>
-                <p class="hero-subtitle">Student-founded nonprofit removing barriers to quality education in STEM, robotics, and holistic wellness. Completely free for every child.</p>
-                <div class="hero-buttons">
-                    <a href="#programs" class="btn btn-primary">Our Programs</a>
-                    <a href="#partner" class="btn btn-secondary">Partner With Us</a>
+                <h1>Every child deserves <span class="text-green">STEM,</span> <span class="text-robotics">robotics</span> <span class="text-and">and</span> <span class="text-wellness">wellness</span> <span class="text-white">for free.</span></h1>
+                <p>Two high school students built this from nothing because they believed every kid deserves a shot regardless of where they’re from, what their school can afford, or whether anyone ever told them these doors existed.</p>
+                
+                <div class="hero-actions">
+                    <button class="btn-primary">See Our Programs</button>
+                    <button class="btn-secondary">Partner With Us</button>
                 </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="1000">0</div>
-                    <div class="stat-label">Students Reached</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Workshops Delivered</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="10">0</div>
-                    <div class="stat-label">Partner Schools</div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Who We Are</h2>
-                <p>Student-founded, youth-led nonprofit ensuring every child has access to free STEM and wellness education</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Founded by High School Students</h3>
-                    <p>ACTOC was created by Nitika Metharamitta & Amulya Atluri because we saw the gaps in educational access firsthand. We're not a large institution - we're young people committed to making real change, starting in our own community.</p>
-                    <div class="founders">
-                        <div class="founder">
-                            <img src="https://via.placeholder.com/80x80/4F46E5/FFFFFF?text=NM" alt="Nitika">
-                            <h4>Nitika Metharamitta</h4>
-                        </div>
-                        <div class="founder">
-                            <img src="https://via.placeholder.com/80x80/10B981/FFFFFF?text=AA" alt="Amulya">
-                            <h4>Amulya Atluri</h4>
-                        </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">$0</span>
+                        <span class="stat-label">Cost to every family</span>
                     </div>
-                </div>
-                <div class="about-mission">
-                    <div class="mission-card">
-                        <i class="fas fa-university"></i>
-                        <h4>501(c)(3) Nonprofit</h4>
-                        <p>Officially registered nonprofit</p>
+                    <div class="stat-item">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Active programs</span>
                     </div>
-                    <div class="mission-card">
-                        <i class="fas fa-globe"></i>
-                        <h4>Local First, Global Vision</h4>
-                        <p>Starting in our community, expanding nationwide</p>
-                    </div>
-                    <div class="mission-card">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h4>100% Free Programs</h4>
-                        <p>No cost to schools or families</p>
+                    <div class="stat-item">
+                        <span class="stat-value">∞</span>
+                        <span class="stat-label">Potential unlocked</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Barriers We Remove</h2>
-                <p>Multiple interconnected obstacles prevent children from accessing STEM and wellness education</p>
+            <div class="hero-visual">
+                <div class="image-card">
+                    <img src="your-image-here.png" alt="ACTOC Logo holding a heart">
+                </div>
             </div>
-            <div class="problem-grid">
-                <div class="problem-card stem">
-                    <div class="problem-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>STEM Access Gap</h3>
+        </section>
+
+        <section class="problem-section">
+            <div class="section-header">
+                <span class="tag">THE PROBLEM</span>
+                <h2>Kids don't miss out for one reason. They miss out for all of them at once.</h2>
+            </div>
+
+            <div class="cards-container">
+                <div class="info-card border-blue">
+                    <span class="card-label label-blue">ACTOC ROBOTICS</span>
+                    <h3>The STEM Access Gap</h3>
                     <ul>
-                        <li>School budget limitations</li>
-                        <li>Family financial barriers</li>
-                        <li>Geographic limitations</li>
-                        <li>Lack of awareness</li>
+                        <li>School budgets that can't sustain STEM programs</li>
+                        <li>Registration fees and materials costs families can't afford</li>
+                        <li>Geography keeping families from the nearest program</li>
                     </ul>
                 </div>
-                <div class="problem-card wellness">
-                    <div class="problem-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Wellness Education Gap</h3>
+
+                <div class="info-card border-orange">
+                    <span class="card-label label-orange">ACTOC WELLNESS</span>
+                    <h3>The Child Wellness Gap</h3>
                     <ul>
-                        <li>Underfunded programs</li>
-                        <li>Mental health stigma</li>
-                        <li>No age-appropriate resources</li>
-                        <li>Cultural barriers</li>
+                        <li>Wellness curriculum that disappears when budgets tighten</li>
+                        <li>Mental health that's stigmatized or simply never brought up</li>
+                        <li>Children growing up with no language for their own wellbeing</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Programs Section -->
-    <section id="programs" class="programs">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Solution</h2>
-                <p>We remove barriers completely with free, accessible programs</p>
-            </div>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>STEM & Robotics Workshops</h3>
-                    <p>Hands-on robotics and STEM workshops for elementary students. We bring everything - no cost to schools or families.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Completely free</li>
-                        <li><i class="fas fa-check"></i> Hands-on learning</li>
-                        <li><i class="fas fa-check"></i> No prior experience needed</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>ACTOC Wellness Series</h3>
-                    <p>Three-book series + events covering nutrition, body health, and mental well-being for children.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Age-appropriate content</li>
-                        <li><i class="fas fa-check"></i> Hands-on events</li>
-                        <li><i class="fas fa-check"></i> Free distribution</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section id="impact" class="impact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Impact Model</h2>
-            </div>
-            <div class="impact-table">
-                <div class="table-header">
-                    <div>Program</div>
-                    <div>Current Reach</div>
-                    <div>Who We Serve</div>
-                    <div>Cost to Schools</div>
-                    <div>Cost to Families</div>
-                    <div>Outcome</div>
-                </div>
-                <div class="table-row">
-                    <div>STEM & Robotics</div>
-                    <div>Local community</div>
-                    <div>Elementary students</div>
-                    <div>$0</div>
-                    <div>$0</div>
-                    <div>STEM confidence</div>
-                </div>
-                <div class="table-row">
-                    <div>Wellness Series</div>
-                    <div>Local events + books</div>
-                    <div>All children</div>
-                    <div>$0</div>
-                    <div>$0</div>
-                    <div>Health literacy</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partner Section -->
-    <section id="partner" class="partner">
-        <div class="container">
-            <div class="partner-content">
-                <div class="partner-text">
-                    <h2>Partner With Us</h2>
-                    <p>Join schools, businesses, and organizations making free STEM and wellness education possible for every child.</p>
-                    <div class="partner-options">
-                        <div class="partner-option">
-                            <i class="fas fa-school"></i>
-                            <h4>Schools</h4>
-                            <p>Free workshops & resources</p>
-                        </div>
-                        <div class="partner-option">
-                            <i class="fas fa-building"></i>
-                            <h4>Businesses</h4>
-                            <p>Sponsorship opportunities</p>
-                        </div>
-                        <div class="partner-option">
-                            <i class="fas fa-handshake"></i>
-                            <h4>Foundations</h4>
-                            <p>Program funding</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-form">
-                    <h3>Get Involved</h3>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <select>
-                            <option>I'm a...</option>
-                            <option>School Administrator</option>
-                            <option>Business Owner</option>
-                            <option>Foundation</option>
-                            <option>Community Member</option>
-                        </select>
-                        <textarea placeholder="Tell us how you'd like to partner with ACTOC"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>ACTOC</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#programs">Programs</a>
-                    <a href="#impact">Impact</a>
-                    <a href="#partner">Partner</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ACTOC. 501(c)(3) Nonprofit. Founded by Nitika Metharamitta & Amulya Atluri.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
