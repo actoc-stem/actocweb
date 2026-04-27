@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide loader immediately after DOM loads
+    setTimeout(() => {
+        const loader = document.querySelector('.loader');
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }, 1000);
+    
+    // Rest of your functionality here...
+    console.log('ACTOC website loaded successfully!');
+});
+</script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
